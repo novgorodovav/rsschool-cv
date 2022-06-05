@@ -1,8 +1,8 @@
 # Alexey Novgorodov
-`Junior Frontend Developer`
+__Junior Frontend Developer__
 
 ## __Contacts__
-- Phone: [+7-977-877-06-85](tel:+79778770685)
+- Phone: +7-977-877-06-85
 - Email: [novgorodovav@gmail.com](mailto:novgorodovav@gmail.com)
 - GitHub: [@novgorodovAV](https://github.com/novgorodovav)
 - Telegram: [@anovgorodov](https://t.me/anovgorodov)
@@ -17,8 +17,39 @@ I'm 34 years old. There is a small business that works without my participation.
 * VS Code
 
 ## __Code Example__
-```
-Code Example
+```javascript
+let phrases = [
+    { text: 'отправить другу смешную гифку', image: 'https://code.s3.yandex.net/web-code/procrastinate/1.gif' },
+    { text: 'посмотреть скидки на авиабилеты', image: 'https://code.s3.yandex.net/web-code/procrastinate/2.png' },
+    { text: 'разобраться, о чём поют рэперы', image: 'https://code.s3.yandex.net/web-code/procrastinate/3.png' },
+  ];
+  
+  function getRandomElement(arr) {
+    let randIndex = Math.floor(Math.random() * arr.length);
+    return arr[randIndex];
+  }
+  
+  let button = document.querySelector('.button');
+  let phrase = document.querySelector('.phrase');
+  let advice = document.querySelector('.advice');
+  let image = document.querySelector('.image');
+  
+  button.addEventListener('click', function () {
+    let randomElement = getRandomElement(phrases);
+    smoothly(phrase, 'textContent', randomElement.text);
+    smoothly(image, 'src', randomElement.image);
+  
+    if (randomElement.text.length > 40) {
+      advice.style.fontSize = '33px';
+    } else {
+      advice.style.fontSize = '42px';
+    }
+  });
+  
+  for (let i = 0; i <= 2; i = i + 1) {
+    smoothly(phrase, 'textContent', phrases[i].text);
+    smoothly(image, 'src', phrases[i].image);
+  }
 ```
 
 ## __Experience__
@@ -28,9 +59,9 @@ Code Example
 
 ## __Education__
 - University degree
-- Сourse "Web developer" (Yandex Practicum) - in progress
-- Сourse " JavaScript/Front-end" (RS School) - in progress
+- Сourse "Web developer" (Yandex Practicum) - _in progress_
+- Сourse " JavaScript/Front-end" (RS School) - _in progress_
 
 ## __Languages__
-* English - pre-intermediate
-* Russian - native
+* English - _pre-intermediate_
+* Russian - _native_
