@@ -1,5 +1,26 @@
-body, h1, h2, h3, h4, p, a {
-    margin: 0;
-    font-size: 100%;
-    font-weight: normal;
-  }
+* {
+  box-sizing: border-box;
+}
+
+/* body, h1, h2, h3, h4, p, a {
+  margin: 0;
+  font-size: 100%;
+  font-weight: normal;
+} */
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+header, main, footer {
+  border: 1px solid red;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
