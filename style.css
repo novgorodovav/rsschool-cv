@@ -10,7 +10,7 @@ html {
 
 body {
   font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   min-height: 100vh;
   margin: 0;
@@ -35,6 +35,21 @@ ul {
   flex-wrap: wrap;
 }
 
+.section-profile {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.section-profile-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: left;
+  text-transform: uppercase;
+}
+
 .footer-container {
   display: flex;
   justify-content: space-between;
@@ -43,6 +58,7 @@ ul {
 
 .section {
   width: 50%;
+  padding-top: 30px;
 }
 
 @media (max-width: 768px) {
